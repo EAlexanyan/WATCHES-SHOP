@@ -20,7 +20,7 @@ function NavBar() {
 
         <div className='navSign'>
             <a href='#'><i class="fa-solid fa-bag-shopping"></i></a>
-             <a href='#'><i class="fa-solid fa-right-to-bracket"></i></a>              
+             <a href='#'><i class="fa-solid fa-right-to-bracket"></i></a>                        
         </div>
     </div>
   )
