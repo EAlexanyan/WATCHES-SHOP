@@ -1,0 +1,42 @@
+.all{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+
+.all .divImg{
+    width: 600px;
+    height: 350px;
+}
+
+.all .divImg img{
+    width: 100%;
+    height: 100%;
+}
+
+.all .descDiv{
+    width: 700px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px;
+}
+
+.all .descDiv h3{
+    font-size: 38px;
+    letter-spacing: 3px;
+}
+
+.all .descDiv h4{
+    font-size: 28px;
+    color: rgb(190, 187, 184);
+    font-weight: 100;
+}
+
+.all .descDiv p{
+    font-size: 20px;
+    color: rgb(95, 95, 94);
+}

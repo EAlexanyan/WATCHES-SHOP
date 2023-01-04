@@ -18,10 +18,15 @@ function Slider({children}) {
     console.log('handleClickRight');
     setOffset((nw) => {
         const newOffset = nw - 450
-
+               
         return Math.max(newOffset, -900)
     })
  }
+
+useEffect(() => {
+    setInterval(handleClickRight, 4000) 
+}, [])
+
 
  useEffect(() => {
     setPages(
