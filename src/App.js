@@ -5,6 +5,8 @@ import Slider from './Components/Slider/Slider';
 import Descript from './Components/Descript/Descript';
 import { useState } from 'react';
 import Products from './Components/Products/Products';
+import Popular from './Components/Popular/Popular';
+import Footer from './Components/Footer/Footer';
 
 
 function App() {
@@ -26,6 +28,8 @@ function App() {
           </Slider>
           <Descript />
           <Products setItemInfo={setItemInfo} itemInfo={itemInfo}/>
+          <Popular />
+          <Footer />
     </div>
   );
 }

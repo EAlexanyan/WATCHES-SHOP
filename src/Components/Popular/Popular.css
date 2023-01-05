@@ -1,0 +1,32 @@
+.allPop{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    padding: 40px;
+}
+
+.allPop .titlePop{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+
+.allPop .titlePop h2{
+    letter-spacing: 3px;
+}
+
+.allPop .itemsPop{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.allPop .itemsPop img{
+    width: 170px;
+    height: 60px;
+}
