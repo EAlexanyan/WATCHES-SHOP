@@ -1,0 +1,27 @@
+.cartItems{
+    width: 100%;
+    height: 80px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    margin: 20px auto;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.cartItems img{
+    width: 30%;
+    height: 100%;
+}
+
+.cartItems .descCartIrem{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.cartItems span{
+    cursor: pointer;
+    height: 5px;
+}

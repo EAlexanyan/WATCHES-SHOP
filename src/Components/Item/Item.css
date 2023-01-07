@@ -3,7 +3,7 @@
     height: 300px;
     display: flex;
     background-color: white;
-    gap: 10px;
+    /* gap: 5px; */
     padding: 10px;
 }
 
@@ -20,7 +20,7 @@
     font-size: 18px;
 }
 
-.item .decript button{
+.item .decript .addCart{
     width: 80px;
     height: 35px;
     cursor: pointer;
@@ -30,13 +30,23 @@
     transition: .3s;
 }
 
-.item .decript button:hover{
+.item .decript .addCart:hover{
     background-color: #363d42;
     color: white;
 }
 
+.activeAdd{
+    width: 80px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #363d42;
+    color: white;
+    border: 2px solid #363d42;
+    font-weight: 600;
+}
+
 .item .imgDiv{
-    width: 195px;
+    width: 250px;
     height: 100%;
 }
 

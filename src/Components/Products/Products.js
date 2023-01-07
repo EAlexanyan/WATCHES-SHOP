@@ -3,16 +3,18 @@ import React, { useEffect, useState } from 'react'
 import Item from '../Item/Item'
 import './Products.css'
 
-function Products({itemInfo, setItemInfo}) {
+function Products({itemInfo, setItemInfo, itemAddClick, searchInput}) {
   const [err, setErr] = useState('')
+  
 
   useEffect(() => {
-     axios.get('https://fakestoreapi.com/products')
+     axios.get('https://63b893206f4d5660c6d9fcfa.mockapi.io/products')
      .then((respons) => {            
        setItemInfo([
         ...itemInfo,
         ...respons.data
       ])
+
 
      }).catch(err => {
         setErr(err.message)
@@ -28,7 +30,7 @@ function Products({itemInfo, setItemInfo}) {
 
        <div className='products'>
           {
-            itemInfo.map((el, i) => <Item key={i} id={el.id.toString()} tit={el.title.slice(0, 30)} price={el.price} img={el.image} />)
+            itemInfo.filter(item => item.title.toLowerCase().includes(searchInput.toLowerCase())).map((el, i) => <Item key={i} id={el.id.toString()} tit={el.title} price={el.price} img={el.image} onClickAdd={(obj) => itemAddClick(obj)}/>)
           }
        </div>
     </div>
